@@ -185,7 +185,7 @@ def main():
                                 st.balloons()
                             else:
                                 st.markdown("<p class='result-bad'>Ce Têtê est de mauvaise qualité... 😞</p>", unsafe_allow_html=True)
-                                st.toast("WARNING", icon="☣️")
+                                st.toast("WARNING: Ne pas consommer !!", icon="☣️")
                             st.metric("Confiance", f"{max_prob:.2f}%", delta=None)
 
                             # Probabilités détaillées

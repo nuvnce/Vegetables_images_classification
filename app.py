@@ -106,7 +106,7 @@ def main():
         st.write("**Modèle :** XGBoost optimisé")
         st.write("**Précision :** 90%")
         st.write("**AUC :** 0.90")
-        st.image("model_out/pca_plot.png", caption="Séparation PCA", use_container_width=True)
+        st.image("predicts_img/pca_plot.png", caption="Séparation PCA", use_container_width=True)
 
     # Initialisation de l'état
     if 'intro_accepted' not in st.session_state:

@@ -178,14 +178,14 @@ def main():
                         # Afficher un message personnalisé
                         if max_prob < 70 or diff_prob < 20:
                             st.markdown("<p class='warning-text'>⚠️ Il ne s’agit pas de Têtê ! La prédiction est trop incertaine.</p>", unsafe_allow_html=True)
-                            st.balloons()  # Animation fun
+                            st.snow()  # Animation fun
                         else:
                             if prediction == 0:
                                 st.markdown("<p class='result-good'>Ce Têtê est de bonne qualité ! 🌟</p>", unsafe_allow_html=True)
-                                st.balloons(color="green")
+                                st.balloons()
                             else:
                                 st.markdown("<p class='result-bad'>Ce Têtê est de mauvaise qualité... 😞</p>", unsafe_allow_html=True)
-                                st.balloons(color="red")
+                                st.toast("WARNING", icon="☣️")
                             st.metric("Confiance", f"{max_prob:.2f}%", delta=None)
 
                             # Probabilités détaillées
